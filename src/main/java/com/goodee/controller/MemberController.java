@@ -110,4 +110,18 @@ public class MemberController {
 			
 			return "main/sucfindid";
 		}
+		
+		@GetMapping("/findmailcheck")
+		public String findmailcheck() {
+			
+			return "main/findpopup";
+		}
+		
+		@GetMapping("/repw")
+		public String repw(MemberVO vo) {
+			System.out.println(vo.getMemId());
+			System.out.println(vo.getMemEmail());
+			System.out.println(vo.getMemName());
+			return "main/repw";
+		}
 }
