@@ -46,6 +46,11 @@
 			AND mem_phone = #{memPhone};
 		
 	</select>
+	
+	<select id="findpw" parameterType="map" resultType="memberVO">
+		SELECT * FROM member 
+		 where mem_id = #{id} and mem_name = #{name} and mem_email = #{mail};
+	</select>
 
 </mapper>
 

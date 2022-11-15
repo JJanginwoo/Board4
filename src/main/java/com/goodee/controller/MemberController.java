@@ -117,6 +117,18 @@ public class MemberController {
 			return "main/findpopup";
 		}
 		
+		@PostMapping("/checkId")
+		@ResponseBody
+		public int checkId(@RequestBody Map<String, String> map) {
+		
+			if(mbservice.findpw(map) != null) {
+				return 1;
+			} else {
+				return 0;
+			}
+		       
+		}
+		
 		@GetMapping("/repw")
 		public String repw(MemberVO vo) {
 			System.out.println(vo.getMemId());

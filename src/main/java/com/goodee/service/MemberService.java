@@ -120,4 +120,10 @@ public class MemberService{
 					model.addAttribute("vo", dao.findidphone(vo));
 					
 				}
+				
+				//비밀번호찾기
+				public MemberVO findpw(Map<String, String> map) {
+					
+					return dao.findpw(map);
+				}
 }
