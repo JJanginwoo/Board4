@@ -359,6 +359,9 @@ font {
 button{
 	cursor:pointer;
 }
+html {
+      scroll-behavior: smooth;
+    }
 </style>
 
 
