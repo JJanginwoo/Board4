@@ -199,7 +199,7 @@
            color:red;
         }
         .fadeIn {
-         animation: fadeIn 1.5s ease-out forwards;
+         animation: fadeIn 0.5s forwards;
       }
 
       @keyframes fadeIn { 

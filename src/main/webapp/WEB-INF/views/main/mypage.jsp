@@ -204,7 +204,7 @@ text-align:center;
 	margin: 20px 0;
 }
         .fadeIn {
-         animation: fadeIn 1.5s ease-out forwards;
+         animation: fadeIn 0.5s ease-out forwards;
       }
 
       @keyframes fadeIn { 
