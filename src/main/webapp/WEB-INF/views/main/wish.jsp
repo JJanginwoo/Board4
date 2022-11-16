@@ -563,33 +563,7 @@ text-align:center;
  				});
 			}
 		</script>
-		<script>
-                    	let totalprice = document.getElementsByClassName("total-price");
-                    	let proprice = document.getElementsByClassName("product-price");
-                    	let count = document.getElementsByClassName("product-count");
-                    	let point = document.getElementsByClassName("point");
-                    	let result = 0;
-                    	
-                    	for(let i = 0; i< totalprice.length; i++){
-                    		let a = stringNumberToInt(proprice[i].innerText)*Number(count[i].innerText);
-                    		
-                    		totalprice[i].innerText = priceToString(a);
-                    		point[i].innerText = priceToString(a/100);
-                    		result = result+a;
-                    	}
-                    	document.getElementById("allprice").innerText = priceToString(result);
-                    	
-                    	
-                    	/* 1000단위 ,찍혀있는 문자를 숫자로*/
-                    	function stringNumberToInt(stringNumber){
-                    	    return parseInt(stringNumber.replace(/,/g , ''));
-                    	}
-                    	/* 숫자를 1000단위 ,찍혀있는 문자로*/
-                    	function priceToString(price) {
-                    	    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-                    	}
-                    	
-                    </script>
+		
 		
 </body>
 
