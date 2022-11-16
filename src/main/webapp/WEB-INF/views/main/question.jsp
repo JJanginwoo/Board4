@@ -315,6 +315,15 @@
                     </article>
                 </section>
                 </div>
+                
+                 <script type="text/javascript">
+                	$("#mailform").on('submit',function(){
+                		if($("#accept").is(":checked") == false){
+                			alert("동이ㅡ해라");
+                			return false;
+                		}
+                	})
+                </script>
         </main>
 
 
