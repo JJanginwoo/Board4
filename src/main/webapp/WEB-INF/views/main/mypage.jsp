@@ -494,6 +494,7 @@ text-align:center;
  				  	body:JSON.stringify({"id":id, "page":page, "pageCount":pageCount2})
  				}).then((response) => response.json())
  				.then((data) => {
+ 					console.log("11");
 					console.log(data);
 	
 				var productListDiv2= $("#tbody2");
