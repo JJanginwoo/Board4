@@ -115,7 +115,11 @@
 	.art3-content h3{
     margin-left: 15px;
    }
-   
+   .art3-content p{
+   		padding: 10px 0;
+   		font-weight:400;
+    	height:70px;
+   }
    .display-block{
     display: block;
    }
@@ -260,7 +264,7 @@
                            	</div>
                        
                             <div class="art3-content">
-                           		<h4><span class="art3-Q">A </span> ${item.boardContent}</h4>
+                           		<p>${item.boardContent}</p>
                             </div>
  							</c:forEach>
                     

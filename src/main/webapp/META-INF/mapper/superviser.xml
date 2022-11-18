@@ -14,7 +14,7 @@
 	insert into product_option (product_id, option) values (#{productId},#{option})
 	</insert>
 	<update id="updateInfo" parameterType="shopVO">
-	update product set product_name= #{productName}, product_shop = #{productShop}, product_total = #{productTotal} ,product_image = #{productImage}, product_content = #{productContent}, product_category=#{productCategory},product_total=#{productTotal},product_price=#{productPrice},product_opt=#{productOpt}
+	update product set product_name= #{productName}, product_shop = #{productShop}, product_total = #{productTotal} ,product_image = #{productImage}, product_content = #{productContent}, product_category=#{productCategory},product_total=#{productTotal},product_price=#{productPrice}
 	where product_id = #{productId}
 	</update>
 	

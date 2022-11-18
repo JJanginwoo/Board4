@@ -188,7 +188,7 @@
             .totalinfo {
                 width: 85%;
                 border: 2px solid gray;
-                height: 100px;
+                height: 115px;
                
                 color: black;
                border-radius: 5px;
@@ -334,7 +334,8 @@
                    <div class="art2container">
                    <h2 style="text-decoration: underline" class="h2">회원정보수정</h2>
                        <div class="totalinfo">
-                        <h4>저희 쇼핑몰을 이용해주셔서 감사합니다. ${list.memName}님의 정보입니다.</h4>
+                        <h4>저희 쇼핑몰을 이용해주셔서 감사합니다. ${list.memName}님의 정보입니다.<br>현재 보유 포인트는 <span style="color:blue">${list.point}p</span> 입니다.</h4>
+                        
                         </div>
                         <h1 class="h1">기본정보</h1>
                         <div class="detailinfo">
