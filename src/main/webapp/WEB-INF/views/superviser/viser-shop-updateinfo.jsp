@@ -359,7 +359,7 @@ height:32px;
 	document.getElementById("btn1").addEventListener("click",function(e){
 		e.preventDefault;
 		 var img = document.getElementById("productImage").value;
-		document.getElementById("changeImg").src = img;
+		document.getElementById("changeImg").src = "${pageContext.request.contextPath}/"+img;
 		document.getElementById("changeImg").style.display ='block';
 		console.log(img);
 		
