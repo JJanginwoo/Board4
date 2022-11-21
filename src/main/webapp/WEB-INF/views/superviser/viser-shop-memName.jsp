@@ -130,6 +130,9 @@ margin-top:20px;
 #btn{
 	border:1px solid black;
 }
+#orderStatus{
+text-align:center;
+}
 </style>
 
 </head>

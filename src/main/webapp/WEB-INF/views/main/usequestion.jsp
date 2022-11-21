@@ -302,20 +302,7 @@
                           
                     
                          
-//                           $(document).ready(function(){
-//                         	  $(".tab_title div").click(function(){
-//                         		  console.log("방가방가");
-//                         		  var idx = $(this).index();
-//                         		  $(".tab_title h4").removeClass("on");
-//                         		  $(".tab_title h4").eq(idx).addClass("on");
-//                         		  $(".tab_cont > h4").hide();
-//                         		  $(".tab_cont > h4").eq(idx).show();
-//                         		  console.log("사요나라");
-//                         	  })
-                        	  
-//                           });
-                          
-                          
+
                           </script>
 </body>
 
