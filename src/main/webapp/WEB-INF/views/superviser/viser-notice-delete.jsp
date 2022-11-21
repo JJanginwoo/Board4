@@ -172,6 +172,7 @@ a:hover {
   
   #boardId{
   width:15px;
+      border: none;
   }
   .create{
  
@@ -298,7 +299,7 @@ height: 20px;
 							<button>생성하기</button> <button id="btn3">생성 내용 미리보기</button>
 							<input type="hidden" name="boardCategory" value="공지사항"/>
 							<input type="hidden" name="isDelete" value="0"/>
-							<input type="hidden" value="${mem.id}" name="id" />
+							<%-- <input type="hidden" value="${mem.id}" name="id" /> --%>
 								<div class="div-container">
 									<h2>생성 제목 : <span id="CT"></span> </h2>
 									<h3>생성 내용 : <span id="CC"></span> </h3>
@@ -310,6 +311,7 @@ height: 20px;
       					<div class="art3-container">
         					<div class="art3-first">
         						<div class="art3-first-in">
+        						<input type="text" name="boardId" id="boardId" value="${item.boardId}" readonly/> 
         							<p class="art3-container-span">제목</p>
         							<p>${item.boardTitle}</p>
         						</div>
@@ -317,7 +319,7 @@ height: 20px;
         						<%-- <input type="text" name="boardTitle" id="boardTitle" value="${item.boardTitle}"/> --%>
         					</div>
         					<div class="art3-second">
-        						<%-- <label for="boardId">수정/삭제할 번호</label><input type="text" name="boardId" id="boardId" value="${item.boardId}" readonly/> --%>
+        						
         						<input type="text" name="boardTitle" id="boardTitle" placeholder="수정할 제목을 입력해주세요."/>
         						<textarea name="boardContent" id="boardContent" placeholder = "수정할 내용을 입력해주세요."></textarea>
         						<input type="hidden" name="isDelete" id="delete" class="delete" value=""/>
