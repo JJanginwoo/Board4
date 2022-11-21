@@ -5,7 +5,7 @@
 <nav id="nav1">
         <ul>
           <li><a href="${pageContext.request.contextPath}/goshop">shop</a></li>
-          <li><h2>Hotel</h2></li>
+          <li><h2><a href="${pageContext.request.contextPath}/gohotel">Hotel</a></h2></li>
         </ul>
       </nav>
       <div>

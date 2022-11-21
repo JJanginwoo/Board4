@@ -4,7 +4,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
 <nav id="nav1">
         <ul>
-          <li><h2>Shop</h2></li>
+          <li><h2><a href="${pageContext.request.contextPath}/goshop">Shop</a></h2></li>
           <li><a href="${pageContext.request.contextPath}/gohotel">Hotel</a></li>
 
         </ul>

@@ -120,7 +120,7 @@ width:80%;
 height:100px;
 font-size:12px;
 border:1px solid black;
-white-space:nowrap;
+
 
 }
 th,td{
