@@ -8,8 +8,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/final/css/frame/main/footer.css">
-
-
 <title>Insert title here</title>
 <style>
 body{
@@ -122,6 +120,7 @@ width:80%;
 height:100px;
 font-size:12px;
 border:1px solid black;
+white-space:nowrap;
 
 }
 th,td{
@@ -183,6 +182,8 @@ text-align:left;
 	color: black;
 	border-radius:5px;
 	height:30px;
+	text-align:center;
+	
 }
 </style>
 
@@ -252,7 +253,11 @@ text-align:left;
 				<th><fmt:formatNumber value="${list.productPrice}" pattern="#,###" />원</th>
 				<th>${list.productCount}</th>
 				<th><fmt:formatNumber value="${list.orderPrice}" pattern="#,###" />원</th>
-				<th class="black"><input type="text" id="orderStatus" name="orderStatus" value="${list.orderStatus}" /></th>
+				<th class="black"><select name="orderStatus" id="orderStatus">
+			<option value="배송준비중">배송준비중</option>
+			<option value="배송중">배송중</option>
+			<option value="배송완료">배송완료</option>
+			</select></th></th>
 				<th>${list.orderMsg}</th>
 				<th class="black"><button>수정</button></th>
 				</tr>
