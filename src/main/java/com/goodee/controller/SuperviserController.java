@@ -166,7 +166,7 @@ public class SuperviserController {
 	   
 	   @GetMapping("delete/success/{productId}")
 	   public String deleteProc(@PathVariable int productId) {
-	      System.out.println("오나보까");
+	    
 	      superservice.godelete(productId);
 	      return "/superviser/viser-main";
 	   }

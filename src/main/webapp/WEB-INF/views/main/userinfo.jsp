@@ -352,7 +352,7 @@
                     <div class="info-container">
                         <label for="password"><h3 class="h3">비밀번호 변경</h3></label>
                         <input type="password"  class="inputlist" name="password" id="password" placeholder="변경할 비밀번호"  pattern=".{4,16}" required>
-                        <span>(영문 대소문자/숫자, 4~16자)</span><br>
+                        <span>(영문 대소문자/숫자/특수문자 8~25자)</span><br>
                         </div>
                         
                         <div class="info-container">
@@ -462,19 +462,7 @@
 				        }
 				     }).open();
 				 }
-				/* radio버튼 클릭마다 배송지 div 변경 */
-			$("#same-send1").on("click",function(){
-				 if($(this).is(":checked")){
-					$("#address-div2").hide();
-					$("#address-div1").show();
-				 }
-			})
-			$("#same-send2").on("click",function(){
-				 if($(this).is(":checked")){
-					$("#address-div1").hide();
-					$("#address-div2").show();
-				 }
-			})
+		
 			
 				 document.getElementById("sub1").addEventListener("click",function(){
 				

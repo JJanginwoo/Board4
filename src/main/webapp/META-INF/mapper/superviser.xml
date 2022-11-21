@@ -21,6 +21,9 @@
 	   <delete id="godelete" parameterType="int">
       delete from product where product_id=#{productId}
    </delete>
+      <delete id="deleteoption" parameterType="int">
+      delete from product_option where product_id=#{productId}
+   </delete>
    
 	<update id="deleteBoard" parameterType="boardVO">
 	update board set is_delete = #{isDelete},board_title=#{boardTitle},board_content = #{boardContent} where board_id =#{boardId}

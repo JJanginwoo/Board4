@@ -46,7 +46,7 @@ public class SuperviserService  {
 
 	
 	   public void godelete(int productId) {
-		      System.out.println("오나안오나");
+		      superdao.deleteoption(productId);
 		      superdao.godelete(productId);
 		   }
 
