@@ -134,9 +134,8 @@ public class MemberService{
 					return (i>0)?true:false;
 				}
 				
-				public MemberVO checkEmail(Map<String, String> map) {
-					System.out.println("서비스"+dao.checkEmail(map).getMemEmail());
-					System.out.println("서비스"+dao.checkEmail(map).getMemName());
-					return dao.checkEmail(map);
+				public MemberVO checkEmail(String email) {
+					
+					return dao.checkEmail(email);
 				}
 }

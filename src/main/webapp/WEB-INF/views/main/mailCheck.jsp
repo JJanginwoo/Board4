@@ -182,15 +182,16 @@ button {
 document.getElementById("gomembership").addEventListener("click",function(){
 	console.log(document.getElementById("mail-check-warn").innerHTML);
 	if(document.getElementById("mail-check-warn").innerHTML == "인증번호가 일치합니다."){
-		
 		let email = $('#userEmail1').val() + $('#userEmail2').val();
-		fetch("${pageContext.request.contextPath}/checkEmail",{
-	         method : "POST",
-	         headers : {"Content-Type" : "application/json"},
+		
+		fetch("${pageContext.request.contextPath}/checkEmail",
+			{ method : "POST",
+	         headers : {
+	        	 "Content-Type" : "application/json"
+	       	},
 	         body : JSON.stringify({email:email})
-	      }).then(response => response.json())
+	      }).then((response) => response.json())
 	      .then((data) => {
-				
 				if(data>0){
 					location.href="${pageContext.request.contextPath}/gomembership?email="+email;
 				}else{
@@ -199,7 +200,6 @@ document.getElementById("gomembership").addEventListener("click",function(){
 				}
 			}
 	      );
-		
 	}else{
 		alert("이메일 인증을 완료해주세요!")
 	}
